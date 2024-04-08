@@ -30,7 +30,7 @@ tools {
                         }
                 }
         }
-	stage('Build Automation') {
+	stage('Artifact installation') {
 	when {
                 expression { 
                     env.BRANCH_NAME == 'Development'
