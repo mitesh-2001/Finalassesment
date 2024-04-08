@@ -30,7 +30,16 @@ tools {
                         }
                 }
         }
-
+	stage('Build Automation') {
+	when {
+                expression { 
+                    env.BRANCH_NAME == 'Development'
+                }
+		}	
+            steps {
+                sh "mvn install"
+            }
+        }
        
         stage("deploy to tomcat")
         {
