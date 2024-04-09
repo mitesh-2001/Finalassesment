@@ -50,7 +50,7 @@ tools {
 		}
             steps{
                 script{
-                    deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://13.82.21.94:8080')], contextPath: 'devops', war: 'target/*.war'
+                    deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://52.170.218.106:8088')], contextPath: 'devops', war: 'target/*.war'
                 }
             }
         }
